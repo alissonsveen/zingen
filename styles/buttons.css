@@ -2,11 +2,10 @@
     --btn-bg-color: var(--text-color-primary);
     --btn-color: var(--bg-color);
     border: 0;
-    background-color: transparent;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: fit-content;
 
     border-radius: .5rem;
@@ -49,15 +48,15 @@
 
 .btn[aria-label] {
     position: relative;
+
     &::before {
         content: "";
         position: absolute;
         border-radius: inherit;
-        inset: 0.09375rem;
+        inset: 1px;
         background-color: var(--bg-color);
     }
-
-
+    
     &::after {
         content: attr(aria-label);
         background: var(--btn-bg-color);
